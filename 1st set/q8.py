@@ -10,9 +10,11 @@ try:
 	lines = file.readlines()
 finally:
 	file.close()
-first_col =[]
+second_col =[]
+dic ={}
 for line in lines:
 	matched_by_tab = re.match(r"(.*)\t(.*)", line)
-	first_col.append(matched_by_tab.group(1))
-first_col_set = set(first_col)
-print len(first_col_set)
+	second_col.append(matched_by_tab.group(2))
+	dic[matched_by_tab.group(2)]=0
+sorted(dic.items()):
+    print k
