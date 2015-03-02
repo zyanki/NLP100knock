@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-# python q7.py ../data\ set/KEN_ALL.txt 
+# python q8.py ../data\ set/KEN_ALL.txt 
 import sys
 import re
 arg = sys.argv
